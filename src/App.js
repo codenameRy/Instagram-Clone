@@ -1,6 +1,7 @@
 import React from 'react';
 import "./App.css";
 import InstagramHeader  from './images/instagram_header.png';
+import Post from './Post/Post';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
 
       <h1>Hello you clever programmers! Lets build an Instagram Clone with ReactJS 🚀 </h1>
       
-
+      <Post />
       {/* Posts */}
       {/* Posts */}
     </div>
