@@ -9,7 +9,11 @@ function Post() {
   return (
     <div className="post">
       <div className="post__header">
-      <Avatar className="post__avatar" alt="RLee" src={RyImage} />
+      <Avatar 
+      className="post__avatar" 
+      alt="RLee" 
+      src={RyImage} 
+      />
       <h3>Username</h3>
       </div>
       {/* Header -> Avatar + Username */}
