@@ -2,6 +2,7 @@
     background-color: white;
     max-width: 500px;
     border: 1px solid lightslategray;
+    margin-bottom: 40px;
 }
 .post__image {
     width: 100%;
