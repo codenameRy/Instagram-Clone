@@ -10,14 +10,10 @@ const firebaseApp = firebase.initializeApp({
     measurementId: "G-ZXLJJWZS8F"
 });
 
-const db = firebaseApp.firestore();
-const auth = firebase.auth();
-const storage = firebase.storage();
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-    
-  };
+//Grabbing 3 services from Firebase and storing them into 3 variables
+const db = firebaseApp.firestore(); //Database
+const auth = firebase.auth(); //Authentication for login
+const storage = firebase.storage(); //Storage for file uploading
 
 export { db, auth, storage }
 
-  export default firebaseConfig;
