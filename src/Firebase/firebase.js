@@ -15,5 +15,5 @@ const db = firebaseApp.firestore(); //Database
 const auth = firebase.auth(); //Authentication for login
 const storage = firebase.storage(); //Storage for file uploading
 
-export { db, auth, storage }
+export { db, auth, storage };
 
