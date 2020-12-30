@@ -28,7 +28,7 @@ function App() {
       />
       </div>
 
-      <h1>Hello there clever programmers! Lets build an Instagram Clone with ReactJS 🚀 </h1>
+      <h1>Hello there clever programmers! Lets build an Instagram Clone with ReactJS and Firebase 🚀 </h1>
 
       {
         posts.map(post => (
