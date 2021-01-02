@@ -10,7 +10,8 @@ const firebaseApp = firebase.initializeApp({
     measurementId: "G-ZXLJJWZS8F"
 });
 
-//Grabbing 3 services from Firebase and storing them into 3 variables
+//Grabbing 3 services from Firebase and storing them into 3 variables - Check
+
 const db = firebaseApp.firestore(); //Database
 const auth = firebase.auth(); //Authentication for login
 const storage = firebase.storage(); //Storage for file uploading
