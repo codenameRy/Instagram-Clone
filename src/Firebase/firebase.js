@@ -13,7 +13,7 @@ const firebaseApp = firebase.initializeApp({
 //Grabbing 3 services from Firebase and storing them into 3 variables - Check
 
 const db = firebaseApp.firestore(); //Database
-const auth = firebase.auth(); //Authentication for login
+const auth = firebase.auth(); //Authentication for logins
 const storage = firebase.storage(); //Storage for file uploading
 
 export { db, auth, storage };
