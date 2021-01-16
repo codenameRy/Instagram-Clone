@@ -14,7 +14,7 @@ function App() {
     // }
   ]);
 
-  //useEffect - Runs a piece of code based on a specific condition
+  //useEffect - Runs a piece of code based on specific conditions
 
   useEffect (() => {
     //this is where the code runs ...
