@@ -20,7 +20,10 @@ function App() {
     //this is where the code runs ...
     db.collection('posts').onSnapshot(snapshot => {
     //every time a new post is added, this code fires...
-    setPosts(snapshot.docs.map(doc => doc.data()));
+    setPosts(snapshot.docs.map(doc => ({
+      id: doc.id, 
+      post: doc.data()
+    })));
     })
   }, []);
   return (
@@ -38,8 +41,9 @@ function App() {
       <h1>Hello there clever programmers! Lets build an Instagram Clone with ReactJS and Firebase for 4 Life 🚀 </h1>
 
       {
-        posts.map(post => (
-          <Post username={post.username} caption={post.caption} imageURL={post.imageURL}/>
+        posts.map(({id, post}) => (
+          //The addition of key => id from the post will allow the app to onlye refresh the new unique post
+          <Post key={id} username={post.username} caption={post.caption} imageURL={post.imageURL}/>
         ))
       }
       
