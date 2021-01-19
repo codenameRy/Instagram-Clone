@@ -42,7 +42,7 @@ function App() {
 
       {
         posts.map(({id, post}) => (
-          //The addition of key => id from the post will allow the app to onlye refresh the new unique post
+          //The addition of key id from the post will allow the app to onlye refresh the new unique post
           <Post key={id} username={post.username} caption={post.caption} imageURL={post.imageURL}/>
         ))
       }
