@@ -42,7 +42,7 @@ function App() {
 
       {
         posts.map(({id, post}) => (
-          //The addition of key id from post will allow the app to only render the new unique post on all the react apps
+          //The addition of key id from post will allow the app to only render the new unique post on all the react app
           <Post key={id} username={post.username} caption={post.caption} imageURL={post.imageURL}/>
         ))
       }
