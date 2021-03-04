@@ -15,7 +15,7 @@ function Post({username, caption, imageURL}) {
       />
       <h3>{username}</h3>
       </div>
-      {/* Header -> Avatar + Username */}
+      {/* Header -> Avatar + Usernames */}
 
       <img className="post__image" src={imageURL} alt="react" />
       {/* Image */}
